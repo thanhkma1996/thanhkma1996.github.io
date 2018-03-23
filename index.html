@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skype KMA</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+		<script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+</head>
+<body>
+<div id="wrapper-chat">
+	<div id="header"><a style="color:blue;"><i class="fab fa-skype fa-2x"></i>Skype KMA</a></div>
+	<div id="left">
+		<div id="header-left">
+			<div id="menu-left"><i class="fab fa-adn fa-5x"></i></div>
+			<div id="menu-right">
+				<ul>
+						<li><i class="fas fa-bell fa-2x "></i></li>
+						<li><i class="far fa-address-book fa-2x"></i></li>
+						<li><i class="fab fa-audible fa-2x"></i></li>
+						<li><i class="fas fa-align-left fa-2x"></i></li>
+				</ul>
+			</div>
+		</div>
+		<div id="search-left">
+			<input  id="remoteId" type="text" name="" style="width: 280px; border-radius: 20px 20px 20px 20px; color: black; height: 35px; background-color:white; border-style: none;" placeholder="Nhập id  để call">
+			<i class="fas fa-video fa-2x" id="btnCall" style="float: left; padding-left: -20px;"></i>
+
+			</div>
+		<div id="main-left">
+		<a style="padding-left:20px;"><i class="fas fa-home fa-2x"></i>	Danh Bạ || Gần Đây</a>
+			
+				<div id="listfriend">
+					<ul id="ulUser">
+		            </ul>
+				</div>
+		</div>
+
+		
+
+	</div>
+
+	<div id="right">
+		<div id="right-header">
+			<div id="right-name"> Hiển thị tên nd
+
+			<div id="yourid"> ID : </div>
+			</div>
+			<div id="right-icon">
+						<ul>
+							<li><i class="fas fa-video fa-2x" id="btnCall"></i></li>
+							<li><i class="fas fa-phone fa-2x"></i></li>
+							<li><i class="fas fa-user-plus fa-2x"></i></li>
+						</ul>
+			</div>
+		</div>
+		<div id="right-main">
+			<video id="localStream" width="400" controls></video>
+            <br /><br />
+            <video id="remoteStream" width="400" controls></video>
+            <br /><br />
+		</div>
+		<div id="right-footer">
+			<div id="footer-type">
+				<input type="text" name="" placeholder="Type a message " style="width:700px;; height:90px; border:0px;">
+			</div>
+
+			<div id="footer-icon">
+						<ul>
+								<li><i class="fab fa-angellist"></i></li>
+								<li><i class="far fa-folder-open"></i></li>
+								<li><i class="fas fa-volume-up"></i></li>
+								<li><i class="far fa-arrow-alt-circle-up "></i>
+					</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div style="clear:both"></div>
+<div id="login">
+		<div id="a">a</div>
+		<div id="login-form">
+				<div id="icon-login"><i class="fab fa-aviato fa-10x"></i></div>
+				<div id="process">
+					<input  type="text" id="txtUsername" style="width: 280px; border-radius: 20px 20px 20px 20px; color: black; height: 35px; background-color:white; border-style: none;" placeholder="Nhập tên hoặc email của bạn" ><br>
+				</div>
+				<div id="log-process">
+					<input type="button" value="Sign Up"  style = "width: 80px; height:35px; border-radius: 20px 20px 20px 20px; background-color:#3366CC; color:blue;" id="signup">
+					</div>
+		</div>
+		<div id="b">b</div>
+</div>
+</body>
+ <script src="main.js"></script>
+</html>
